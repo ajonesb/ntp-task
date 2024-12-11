@@ -13,7 +13,7 @@ const SearchBar: React.FC = () => {
     <div className="mb-4">
       <input
         type="text"
-        placeholder="Search across all sections..."
+        placeholder="Type to search..."
         onChange={handleSearch}
         className="p-2 border rounded w-full"
       />

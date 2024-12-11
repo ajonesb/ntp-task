@@ -9,8 +9,9 @@ const TrendingSection: React.FC = () => {
   ];
 
   return (
-    <div className="mt-8">
-      <h2 className="text-xl font-semibold mb-4">Trending</h2>
+    <div className="mt-20">
+      <h1 className="text-3xl font-bold mb-4 text-left">Trending</h1>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {trendingItems.map((item, index) => (
           <div key={index} className="p-4 border rounded-md shadow">
