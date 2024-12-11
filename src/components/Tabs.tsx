@@ -1,5 +1,6 @@
 import React from "react";
 import useLibraryStore from "@/store/librarystore";
+import { Button } from "./Button/Button";
 
 type TabKey = "featured" | "kpis" | "layouts" | "storyboards" | "trending";
 
@@ -15,15 +16,16 @@ const Tabs: React.FC = () => {
   ];
 
   return (
-    <div className="flex space-x-4 mb-4">
+    <div className="max-w-[700px] flex space-x-4 mb-4 mx-auto">
       {tabs.map((tab) => (
-        <button
+        <Button
           key={tab}
-          className={`p-2 ${activeTab === tab ? "font-bold border-b-2" : ""}`}
+          label={tab.charAt(0).toUpperCase() + tab.slice(1)}
+          className={`p-5 ${activeTab === tab ? "font-bold border-b-2" : ""}`}
           onClick={() => setActiveTab(tab)}
         >
           {tab.charAt(0).toUpperCase() + tab.slice(1)}
-        </button>
+        </Button>
       ))}
     </div>
   );
