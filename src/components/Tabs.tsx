@@ -1,8 +1,7 @@
 import React from "react";
 import useLibraryStore from "@/store/librarystore";
 import { Button } from "./Button/Button";
-
-type TabKey = "featured" | "kpis" | "layouts" | "storyboards" | "trending";
+import { TabKey } from "@/types/library";
 
 const Tabs: React.FC = () => {
   const { activeTab, setActiveTab } = useLibraryStore();
