@@ -3,6 +3,7 @@ import SearchBar from "@/components/SearchBar";
 import Tabs from "@/components/Tabs";
 import TabContent from "@/components/TabContent";
 import TrendingSection from "@/components/TrendingSection";
+import { RequestAccess } from "@/components/RequestAccess/RequestAccess";
 
 const Home: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const Home: React.FC = () => {
       <Tabs />
       <TabContent />
       <TrendingSection />
+      <RequestAccess />
     </div>
   );
 };
