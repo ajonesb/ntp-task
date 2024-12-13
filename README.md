@@ -26,6 +26,7 @@ Install dependencies
 - TypeScript
 - Zustand (State Management)
 - Tailwind CSS
+- Storybook
 
 # Current Features
 
@@ -74,6 +75,10 @@ Centralized store using Zustand
 Search query handling
 Tab state management
 Filtered data management
+
+# Design System
+
+Using Storybook components for design system to test and view components outside of application.
 
 # Questions About the Wireframe, Acceptance Criteria, User Flow (from Lack of Clear Documentation, Clear Guidelines, Proper UI/UX Design/Wireframe)
 
